@@ -1,0 +1,84 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "nav nav"
+        "sidebar main"
+        "footer footer";
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto auto 1fr auto;
+      height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #1185c9;
+      color: cornsilk;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav {
+      grid-area: nav;
+      background-color: #070a3a;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: cornsilk;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    aside {
+      grid-area: sidebar;
+      background-color: rgb(148, 172, 240);
+      padding: 1em;
+    }
+
+    main {
+        background-color: rgb(35, 172, 236);
+      grid-area: main;
+    
+    }
+    .flex-cont {
+    display: flex;
+    justify-content: center;
+    height: 40vh; 
+    color: cornsilk;
+    background: rgb(35, 172, 236);
+}
+    .card {
+    position:center;
+    width: 320px;
+    padding:24px;
+    border:1px solid black;
+    color: beige;
+    border-radius: 12px;
+    background-color: rgb(18, 45, 165);
+    }
+    
+    .badge {
+    top: -10px;
+    right: -10px;
+    padding:4px 8px;
+    font-size:12px;
+    background:rgb(209, 18, 56);
+    color:cornsilk;
+}
+
+    footer {
+      grid-area: footer;
+      background-color: #081e2b;
+      color:cornsilk;
+      text-align: center;
+      padding: 1em;
+    }
